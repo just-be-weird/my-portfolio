@@ -1,0 +1,62 @@
+.composition {
+    position: relative;
+    &__photo {
+        border-radius: .2rem;
+        -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .4);
+                box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .4);
+        display: inline-block;
+        outline-offset: 2rem;
+        position: absolute;
+        width: 55%;//always define width of images in % -> desgin rule for making images flexible, remsponsive
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        z-index: 10;
+
+        @include respond(tab-port) {
+            -webkit-box-shadow: 0 1.5rem 3rem rgba($color-black, $alpha: .2);
+                box-shadow: 0 1.5rem 3rem rgba($color-black, $alpha: .2);
+            float: left;
+            position: relative;
+            width: 33.3333%;
+        }
+        &--p1 {
+            left: 0;
+            top: -2rem;
+            @include respond(tab-port) {
+                top: 0;
+                transform: scale(1.2);
+            }
+        }
+        &--p2 {
+            right: 0;
+            top: 2rem;
+            @include respond(tab-port) {
+                top: -1rem;
+                transform: scale(1.3);
+                z-index: 20;
+            }
+        }
+        &--p3 {
+            left: 20%;
+            top: 10rem;
+            @include respond(tab-port) {
+                left: 0;
+                top: 1rem;
+                transform: scale(1.1);
+            }
+        }
+
+        &:hover {
+            outline: 1.5rem solid $color-primary;
+            -webkit-transform: scale(1.05) translateY(-.5rem);
+                    transform: scale(1.05) translateY(-.5rem);
+            -webkit-box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+                    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+    //.composition:hover select those imgs which aren't hovered .i.e composition__photo:not(:hover)
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+}

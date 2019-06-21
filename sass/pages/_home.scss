@@ -1,0 +1,222 @@
+.section-about {
+    -webkit-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    background-color: $color-grey-light-3;
+    height: 100vh;
+    text-align: justify;
+    margin-top: 10rem;// header height is 95vh, green section height 75vh so 95-75 = 25  
+    // padding: 25rem 0;
+    // @include respond(tab-port) {
+    //     padding: 35rem 0 25rem;
+    // }
+    .long-copy {
+        margin-bottom:14rem;
+    }
+
+}
+
+.section-experience {
+    height: 100vh;
+    margin: 10rem 20rem 0;
+    // margin-top: 10rem;
+    &-selector {
+        display: flex;
+        margin-top: 6rem;
+        max-width: 120rem;
+        justify-content: space-evenly;
+        &-tab {
+            li {
+                border-left: 2px solid $color-grey-light-2;
+                list-style: none;
+                margin: 0 4rem 0 0;
+                button {
+                    outline: none;
+                    text-decoration-skip-ink: auto;
+                    position: relative;
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                    height: 4.6rem;
+                    font-size: 2rem;
+                    width: 20rem;
+                    // color: #64ffda;
+                    text-decoration: none;
+                    padding: 0px 2rem .2rem;
+                    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                            }
+                &.active {
+                    border-left: 2px solid $color-blue;
+                    background-color: $color-grey-light-2;
+                }
+                &:hover {
+                    border-left: 2px solid $color-blue;
+                    background-color: $color-grey-light-2;
+                }
+            }
+        }
+        &-job-desc {
+            div[id^='job']{
+                display: none;
+                outline: none;
+                ul {
+                    @extend .ul_list;
+                }
+                
+                .job__title {
+                   span {
+                       font-size: 1.6rem;
+                   }
+                   
+                }
+                .job__span {
+                    font-size: 1.2rem;
+                    color: $color-grey-dark;
+                }
+                .ul-selector {
+                    li {
+                        padding: 2rem 3rem;
+                        font-size: 1.6rem;
+                        position: relative;
+                    }
+                }
+                .job__company {
+                    a {
+                        font-size: 2.6rem;
+                    }
+                }
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+    .cta-container {
+        margin: 46px 0 0rem 0;
+    }
+}
+
+.section-stones {
+    -webkit-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    background-color: #f2f2f2;
+    height: 100vh;
+    margin-top: 2rem;
+    &> .row {
+        margin-top: 8rem;
+    }
+    & > .row--2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.section-projects {
+    margin-top: 20rem;
+    height: 100vh;
+    
+}
+.section-contact {
+    -webkit-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    background-color: #f2f2f2;
+    margin-top: 20rem;
+    height: 80vh;
+}
+// .section-stones {
+//     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.80)), to(rgba(40, 180, 133, 0.80))),
+//         url('../img/nat-4.jpg');
+//     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.80), rgba(40, 180, 133, 0.80)),
+//         url('../img/nat-4.jpg');
+//     background-size: cover;
+//     margin-top: -8rem;//moving skewed row to cover white space
+//     padding: 20rem 0;
+
+//     /*SKEW design in feature section*/
+//     -webkit-transform: skewY(-7deg);
+//             transform: skewY(-7deg);
+    
+//     // direct child selector
+//     & > * {//section-features > all of them
+//         -webkit-transform: skewY(7deg);
+//                 transform: skewY(7deg);
+//     }
+//     @include respond(tab-port) {
+//         padding: 10rem 0;
+//     }
+// }
+.long-copy {
+    font-size: 2.2rem;
+    line-height: 145%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+.section-tours {
+    background-color: $color-grey-light-1;
+    margin-top: -8rem;//moving skewed row to cover white space
+    padding: 25rem 0 5rem 0;
+    @include respond(tab-port) {
+        padding: 20rem 0 5rem 0;
+    }
+
+}
+
+.section-stories {
+    padding: 15rem 0;
+    position: relative;
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+.book {
+    background-image: linear-gradient(105deg,
+                                        rgba($color-white, .7) 0%,
+                                        rgba($color-white, .7) 50%,
+                                        transparent 50%),
+                                    url(../img/nat-10.jpg);
+
+                                    /*
+                                        angle,
+                                        gradient-start-color 0%,
+                                        mid-gradient-color 50%,
+                                        transparent 50%        => so gradient happend in beween 50 and 50 and its a line 
+                                    */
+    background-size: 100%;//its similar to cover but works in x direction
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2); 
+    
+    @include respond(tab-landscape) {
+        background-image: linear-gradient(105deg,
+                            rgba($color-white, .7) 0%,
+                            rgba($color-white, .7) 65%,
+                            transparent 65%),
+                            url(../img/nat-10.jpg);
+        background-size: cover;
+    }
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right,
+                            rgba($color-white, .9) 0%,
+                            rgba($color-white, .9) 100%,
+                            url(../img/nat-10.jpg));
+        background-size: cover;
+    }
+    // @include respond(phone) {
+        
+    // }
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-landscape) {
+            width: 70%;
+        }
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}

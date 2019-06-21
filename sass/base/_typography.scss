@@ -1,0 +1,116 @@
+/* -- Headings -- */
+
+body {
+    color: $color-grey-dark-3;
+    font-family: "Lato", 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    /* 1.7 means 1.7 times of defualt value */
+}
+
+.heading-primary {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* for hiding shakey animation*/
+    text-transform: uppercase;
+    
+    
+    &--main {
+        color: $color-dark-blue;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-name: moveInLeft;
+        animation-name: moveInLeft;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        display: block;
+        font-size: 4.8rem;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        margin-bottom: 2rem;
+        margin-top: 0;
+        word-spacing: .4rem;
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+        /*
+        animation-iteration-count: 3;
+        animation-delay: 3s;
+        */
+    }
+    
+    &--sub {
+        color: $color-white;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-name: moveInRight;
+        animation-name: moveInRight;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        font-size: 3.6rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+        // margin-bottom: 3rem;
+        word-spacing: .2rem;
+        // @include respond(phone) {
+        //     letter-spacing: .5rem;
+        // }
+    }
+}
+
+.heading-secondary {
+    // background-image:linear-gradient(to right, #26de07, #8ae07b);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    color: $color-black;
+    display: inline-block;
+    font-size: 1.5rem;
+    // font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+    }
+    // &:hover {
+    //     transform: skewY(2deg) skewX(15deg) scale(1.1);
+    //     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    // }
+}
+
+.heading-tertiary {
+    color: $color-black;;
+    font-size: $default-font-size+0.1rem;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.section-title {
+    font-size: 3.6rem;
+    letter-spacing: .1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: $color-dark-blue;
+    word-spacing: .2rem;
+    &:after {
+        background-color: $primary-orange-dark;
+        content: " ";
+        display: block;
+        height: .4rem;
+        margin: 0 auto;
+        width: 10rem;   
+    }
+}

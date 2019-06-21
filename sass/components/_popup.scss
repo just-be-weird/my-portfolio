@@ -1,0 +1,150 @@
+.popup {
+    // background-color: rgba(orangered, 1);
+    background-color: rgba($color-black, .8);
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2500;
+
+    //hiding the popup
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    
+    &__content {
+        @include absCenter;
+        
+        position: relative;
+        background-color: $color-white;
+        -webkit-box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        border-radius: 3px;
+        display: table;//so that both the column should have same height
+        overflow: hidden;//so that we can see the border-radius which was hidden.
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.5);
+        transition: all .4s .2s;
+        width: 75%;
+    }
+    
+    &__left {
+        display: table-cell;
+        vertical-align: middle;
+        width: 33.3333%;
+
+        @include respond(phone) {
+            display: inline-block;
+            padding: 10px;
+            width: 100%;
+        }
+    }
+    
+    &__right {
+        display: table-cell;
+        padding: 3rem 5rem;
+        vertical-align: middle;
+        width: 66.6666%;
+
+        @include respond(phone) {
+            display: table-row;
+            position: relative;
+            & > h2 {
+                padding-left: 10px;
+            }
+            & > h3 {
+                padding: 10px;
+            }
+            & > a.btn {
+                text-align: center;
+                display: block;
+                position: absolute;
+                padding: 1rem 2rem;
+                bottom: 0;
+                left: 0;
+                transform: translate(85%, -50%);
+            }
+
+        }
+    }
+    
+    &__img {
+        display: block;
+        width: 100%;
+
+        @include respond(phone) {
+            float: left;
+            width: auto;
+            height: 86px;
+            &:first-child {
+                padding-right: 5px;
+            }
+        }
+    }
+    
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+        
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 4rem;
+        -moz-column-gap: 4rem;
+        column-gap: 4rem;   //1em = 14px 
+        -webkit-column-rule: 1px solid $color-grey-dark;
+        -moz-column-rule: 1px solid $color-grey-dark;
+        column-rule: 1px solid $color-grey-dark;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        
+        @include respond(phone) { 
+            column-gap: 3rem;   //1em = 14px 
+            margin-bottom: 0;
+            padding: 30px;
+            padding: 30px 30px 80px;
+
+        }
+    }
+
+    //open state of popup
+    
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    &:target {
+        opacity: 1;
+        visibility: visible;
+        
+    }
+    
+    &__close {
+        &:link,
+        &:visited {
+            color: $color-grey-dark;
+            display: inline-block;
+            font-size: 3rem;
+            line-height: 1;
+            position: absolute;
+            right: 2.5rem;
+            text-decoration: none;
+            top: 2.5rem;
+            transition: all .2s;
+            
+            @include respond(phone) {
+                font-weight: 700;
+            }
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
