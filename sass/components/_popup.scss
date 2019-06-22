@@ -14,6 +14,18 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+
+    &.active > &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    &.active {
+            opacity: 1;
+            visibility: visible;
+
+    }
+    //     transform: translate(-50%, -50%) scale(1);
+    // }
     
     &__content {
         @include absCenter;
@@ -73,7 +85,8 @@
     
     &__img {
         display: block;
-        width: 100%;
+        height: 20rem;
+        width: auto;
 
         @include respond(phone) {
             float: left;
@@ -112,18 +125,18 @@
         }
     }
 
-    //open state of popup
+    // //open state of popup
     
-    &:target &__content {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
+    // &:target &__content {
+    //     opacity: 1;
+    //     transform: translate(-50%, -50%) scale(1);
+    // }
     
-    &:target {
-        opacity: 1;
-        visibility: visible;
+    // &:target {
+    //     opacity: 1;
+    //     visibility: visible;
         
-    }
+    // }
     
     &__close {
         &:link,

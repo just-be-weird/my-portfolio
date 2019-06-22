@@ -72,25 +72,43 @@
 
     //Front side styling
     &__picture {
-        background-size: cover;
-        background-blend-mode: screen;
+        // background-size: cover;
+        background-blend-mode: difference;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 54%);
         height: 10rem;
 
         &--1 {
-            background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark)), url(../img/nat-5.jpg);
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark)), -webkit-image-set(
+                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+            );
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), image-set(
+                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+            );
         }
 
         &--2 {
-            background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark)), url(../img/nat-6.jpg);
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark)), -webkit-image-set(
+                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+            );
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), image-set(
+                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+            );
         }
 
         &--3 {
-            background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark)), url(../img/nat-7.jpg);
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+            background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark)), -webkit-image-set(
+                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+            );
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), image-set(
+                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+            );
         }
     }
 
@@ -182,21 +200,8 @@
         }
     }
 
-    &__price-box {
-        text-align: center;
-        color: $color-white;
-        margin-bottom: 8rem;
-    }
 
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
 
-    &__price_value {
-        font-size: 6rem;
-        font-weight: 100;
-    }
 
     @include respond(tab-port) {
         border-radius: .3rem;
@@ -238,14 +243,6 @@
             top: 0;
             transform: translate(0);
             width: 100%;
-        }
-
-        &__price-box {
-            margin-bottom: 3rem;
-        }
-
-        &__price_value {
-            font-size: 4rem;
         }
     }
 }

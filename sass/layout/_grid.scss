@@ -1,17 +1,5 @@
 .container {
-    // max-width: 120rem;
-    // margin: 8rem auto;
     background-color: $color-white;
-    // box-shadow: var(--shadow-dark);
-
-    // min-height: 50rem;
-    // background: -webkit-image-set(
-    //         url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-    //         url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
-    //     )
-    //     left top repeat rgb(255, 255, 255);
-    // background-attachment: fixed;
-
     @media only screen and (max-width: $bp-largest) {
         margin: 0;
         max-width: 100%;
