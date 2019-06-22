@@ -296,6 +296,10 @@ a:hover, a:active {
     object-fit: cover; }
 
 /* -- Buttons -- */
+button {
+  border: none;
+  background: transparent; }
+
 .btn {
   /* .header__text-box .btn--white { */ }
   .btn--white {
@@ -610,6 +614,43 @@ a:hover, a:active {
   .stones-box--power:hover {
     background-image: linear-gradient(to right, #673AB7, #9C27B0); }
 
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 8rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -40%;
+  left: 551%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ffb900 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
+
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
@@ -915,6 +956,8 @@ a:hover, a:active {
       color: #e43112; }
     .section-sidebar__icon--github:hover {
       color: #9b17e7; }
+    .section-sidebar__icon--envelope:hover {
+      color: #cc0000; }
     .section-sidebar__icon--wordpress:hover {
       color: #28b485; }
     .section-sidebar__icon--skype:hover {

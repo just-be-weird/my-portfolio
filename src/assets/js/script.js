@@ -1,5 +1,6 @@
 $(function() {
-    var scrollDirection = 0, clqWtch= true;
+    var scrollDirection = 0,
+        clqWtch = true;
     $(window).scroll(function() {
         var winTop = $(window).scrollTop();
         if (winTop > scrollDirection) {
@@ -11,7 +12,7 @@ $(function() {
                 scrollDirection = $(window).scrollTop();
             }
         } else {
-            clqWtch= true;
+            clqWtch = true;
             $("nav").removeClass("sticky");
             scrollDirection = $(window).scrollTop();
             // upscroll code
@@ -66,13 +67,13 @@ $(function() {
                             // Must change focus!
                             var $target = $(target);
                             $target.focus();
-                            clqWtch= false;
+                            clqWtch = false;
                             if ($target.is(":focus")) {
-                                console.log("focus" );
+                                console.log("focus");
                                 // Checking if the target was focused
                                 return false;
                             } else {
-                                console.log("tabindex" );
+                                console.log("tabindex");
                                 $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
                                 $target.focus(); // Set focus again
                             }
@@ -103,3 +104,17 @@ $(function() {
         }
     });
 });
+function copyTextTo_CB() {
+    var inp = document.createElement("INPUT");
+    inp.value = "abhi.chandresh@gmail.com";
+    document.body.appendChild(inp);
+    inp.select();
+    document.execCommand("copy");
+    document.body.removeChild(inp);
+    outToolTip("Copied!😊");
+}
+
+function outToolTip(a = "Copy Email") {
+    var tltp = document.getElementById("tooltip_area");
+    tltp.innerHTML = a;
+}

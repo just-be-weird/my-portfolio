@@ -1,5 +1,9 @@
 /* -- Buttons -- */
 
+button {
+    border: none;
+    background: transparent;
+}
 .btn {
     &--white {
         background-color: $color-dark-blue;

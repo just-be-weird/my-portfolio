@@ -52,6 +52,11 @@
                 color: #9b17e7;
             }
         }
+        &--envelope {
+            &:hover {
+                color: #cc0000;
+            }
+        }
         &--wordpress {
             &:hover {
                 color: $color-primary-dark;
