@@ -4,7 +4,7 @@
   "description": "Theme for portfolio",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/*.scss css/style.css -w",
+    "watch:sass": "node-sass src/assets/sass/*.scss public/assets/css/style.css -w",
     "devserver": "live-server",
     "start": "concurrently npm:watch:sass npm:devserver"
   },

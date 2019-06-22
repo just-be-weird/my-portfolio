@@ -80,34 +80,34 @@
 
         &--1 {
             background-image: -webkit-gradient(linear, left top, right bottom, from($color-secondary-light), to($color-secondary-dark)), -webkit-image-set(
-                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
             );
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), image-set(
-                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
             );
         }
 
         &--2 {
             background-image: -webkit-gradient(linear, left top, right bottom, from($color-primary-light), to($color-primary-dark)), -webkit-image-set(
-                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
             );
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), image-set(
-                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
             );
         }
 
         &--3 {
             background-image: -webkit-gradient(linear, left top, right bottom, from($color-tertiary-light), to($color-tertiary-dark)), -webkit-image-set(
-                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
             );
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), image-set(
-                url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
-                url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x,
+                url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x
             );
         }
     }

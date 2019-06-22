@@ -436,14 +436,14 @@ button {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 54%);
     height: 10rem; }
     .card__picture--1 {
-      background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), -webkit-image-set(url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x);
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), image-set(url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x); }
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), -webkit-image-set(url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x);
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), image-set(url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x); }
     .card__picture--2 {
-      background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), -webkit-image-set(url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x);
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), image-set(url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x); }
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), -webkit-image-set(url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x);
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), image-set(url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x); }
     .card__picture--3 {
-      background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), -webkit-image-set(url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x);
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), image-set(url(../img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(../img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x); }
+      background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), -webkit-image-set(url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x);
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), image-set(url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png) 1x, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@2x.png) 2x); }
   .card__heading {
     color: #ffffff;
     font-size: 2.8rem;
@@ -1006,17 +1006,17 @@ button {
   .section-multi-action__anchor:hover, .section-multi-action__anchor:active {
     border-bottom: none; }
 
-.ul_list, .stones-box__list, .section-experience-selector-job-desc div[id^='job'] ul {
+.ul_list, .stones-box__list, .section-experience-selector-job-desc div[id^="job"] ul {
   list-style: none;
   counter-reset: section; }
-  .ul_list li, .stones-box__list li, .section-experience-selector-job-desc div[id^='job'] ul li {
+  .ul_list li, .stones-box__list li, .section-experience-selector-job-desc div[id^="job"] ul li {
     position: relative; }
-    .ul_list li svg, .stones-box__list li svg, .section-experience-selector-job-desc div[id^='job'] ul li svg {
+    .ul_list li svg, .stones-box__list li svg, .section-experience-selector-job-desc div[id^="job"] ul li svg {
       position: absolute;
       height: 2rem;
       left: -3rem;
       top: 2.5rem; }
-    .ul_list li.stones-box__list-item::before, .stones-box__list li.stones-box__list-item::before, .section-experience-selector-job-desc div[id^='job'] ul li.stones-box__list-item::before {
+    .ul_list li.stones-box__list-item::before, .stones-box__list li.stones-box__list-item::before, .section-experience-selector-job-desc div[id^="job"] ul li.stones-box__list-item::before {
       content: "▹";
       position: absolute;
       left: 0px;
@@ -1358,7 +1358,7 @@ nav {
         font-size: 2rem;
         width: 20rem;
         text-decoration: none;
-        padding: 0px 2rem .2rem;
+        padding: 0px 2rem 0.2rem;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
       .section-experience-selector-tab li.active {
         border-left: 2px solid #0db7ff;
@@ -1366,21 +1366,21 @@ nav {
       .section-experience-selector-tab li:hover {
         border-left: 2px solid #0db7ff;
         background-color: #eee; }
-    .section-experience-selector-job-desc div[id^='job'] {
+    .section-experience-selector-job-desc div[id^="job"] {
       display: none;
       outline: none; }
-      .section-experience-selector-job-desc div[id^='job'] .job__title span {
+      .section-experience-selector-job-desc div[id^="job"] .job__title span {
         font-size: 1.6rem; }
-      .section-experience-selector-job-desc div[id^='job'] .job__span {
+      .section-experience-selector-job-desc div[id^="job"] .job__span {
         font-size: 1.2rem;
         color: #777777; }
-      .section-experience-selector-job-desc div[id^='job'] .ul-selector li {
+      .section-experience-selector-job-desc div[id^="job"] .ul-selector li {
         padding: 2rem 3rem;
         font-size: 1.6rem;
         position: relative; }
-      .section-experience-selector-job-desc div[id^='job'] .job__company a {
+      .section-experience-selector-job-desc div[id^="job"] .job__company a {
         font-size: 2.6rem; }
-      .section-experience-selector-job-desc div[id^='job'].active {
+      .section-experience-selector-job-desc div[id^="job"].active {
         display: block; }
   .section-experience .cta-container {
     margin: 46px 0 0rem 0; }
@@ -1435,7 +1435,7 @@ nav {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(/img/IDR_THEME_NTP_BACKGROUND@1x.png);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png);
   /*
                                         angle,
                                         gradient-start-color 0%,
@@ -1447,11 +1447,11 @@ nav {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 65%, transparent 65%), url(/img/IDR_THEME_NTP_BACKGROUND@1x.png);
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 65%, transparent 65%), url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png);
       background-size: cover; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, url(/img/IDR_THEME_NTP_BACKGROUND@1x.png));
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%, url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png));
       background-size: cover; } }
   .book__form {
     width: 50%;
