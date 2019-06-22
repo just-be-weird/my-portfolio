@@ -65,14 +65,28 @@
         }
     }
 }
+.grd-color {
+    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60)) left 
+    bottom
+    transparent    
+    no-repeat;
+    background: linear-gradient(to right,#ff8a00,#da1b60) left 
+    bottom
+    transparent    
+    no-repeat;
+}
 
 .highlight {
-    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
-    background: linear-gradient(to right,#ff8a00,#da1b60);
+    @extend .grd-color;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     text-shadow: none;
+}
+
+.grd-border-btm {
+    @extend .grd-color;
+    background-size: 100% 3px;
 }

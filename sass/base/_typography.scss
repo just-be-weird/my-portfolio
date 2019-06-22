@@ -106,10 +106,11 @@ body {
     color: $color-dark-blue;
     word-spacing: .2rem;
     &:after {
-        background-color: $primary-orange-dark;
+        @extend .grd-border-btm;
+        background-size: 100% .5rem;
         content: " ";
         display: block;
-        height: .4rem;
+        height: .5rem;
         margin: 0 auto;
         width: 10rem;   
     }
