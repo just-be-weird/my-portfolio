@@ -21,35 +21,39 @@
 <body>
     <div class="container">
         <header id="home">
-            <nav>
+            <input type="checkbox" name="navi-toggle" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation navigation__nav">
                 <div class="row">
                     <svg class="just-be-weird-logo">
                         <use xlink:href="public/assets/img/sprite.svg#icon-flickr4"></use>
                     </svg>
-                    <!-- <img class="just-be-weird-logo" src="./public/assets/img/sprint-logo.png" alt="just-be-weird_logo"> -->
-                    <!-- <img class="just-be-weird-black-logo" src="./public/assets/img/logo.png" alt="just-be-weird-Black-logo"> -->
-                    <ul class="main-nav js--main-nav">
-                        <li>
-                            <a href="#home">Home</a>
+                    <ul class="main-nav navigation__list js--main-nav">
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#home">Home</a>
                         </li>
-                        <li>
-                            <a href="#about">About</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#about">About</a>
                         </li>
-                        <li>
-                            <a class="main-nav-box__experience" href="#experience">Experience</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" class="main-nav-box__experience"
+                                href="#experience">Experience</a>
                         </li>
-                        <li>
-                            <a class="main-nav-box__infinite" href="#stones">
+                        <li class="navigation__item main-nav-box__infinite">
+                            <a class="navigation__link" class="main-nav-box__infinite" href="#stones">
                                 <svg class="main-nav-box__infinite-icon">
                                     <use xlink:href="public/assets/img/sprite.svg#icon-infinite"></use>
                                 </svg>
                                 Stones</a>
                         </li>
-                        <li>
-                            <a href="#projects">Projects</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#projects">Projects</a>
                         </li>
-                        <li>
-                            <a href="#contact">Contact</a>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-ios-menu"></i></a>
@@ -513,7 +517,8 @@
                         </a>
                     </li>
                     <li class="section-multi-action__item">
-                        <a class="section-multi-action__anchor" href="public/assets/docs/AbhishekPrajpati_Resume_2019_06.pdf" target="_blank"
+                        <a class="section-multi-action__anchor"
+                            href="public/assets/docs/AbhishekPrajpati_Resume_2019_06.pdf" target="_blank"
                             rel="nofollow noopener noreferrer">
                             <svg class="section-multi-action__icon section-multi-action__icon--download">
                                 <use xlink:href="public/assets/img/sprite.svg#icon-download"></use>
@@ -578,8 +583,10 @@
             <div class="popup" id="popup">
                 <div class="popup__content">
                     <div class="popup__left">
-                        <img src="public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png" alt="Tour Photo" class="popup__img">
-                        <img src="public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png" alt="Tour Photo" class="popup__img">
+                        <img src="public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png" alt="Tour Photo"
+                            class="popup__img">
+                        <img src="public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png" alt="Tour Photo"
+                            class="popup__img">
                     </div>
                     <div class="popup__right">
                         <a href="#section-tours" class="popup__close">&times;</a>

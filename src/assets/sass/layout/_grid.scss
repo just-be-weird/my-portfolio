@@ -13,7 +13,7 @@
         using max-width if width is less then specified width then it will occupy simply avialable width
     */
 
-    @include respond(tab-landscape) {
+    @include respond(phone) {
         max-width: 50rem;
         padding: 0 3rem;
     }

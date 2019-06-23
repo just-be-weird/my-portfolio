@@ -1,5 +1,7 @@
 $(function() {
-    var scrollDirection = 0,
+    
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var scrollDirection = 0,
         clqWtch = true;
     $(window).scroll(function() {
         var winTop = $(window).scrollTop();
@@ -20,13 +22,17 @@ $(function() {
         }
         scrollDirection = winTop;
     });
-
+    }
     // $('.js--scroll-to-plans').click(function (e) {
     //     e.preventDefault();
     //         scrollTop: $('.js--section-to-plans').offset().top
     //     }, 1000);
     // });/*  */
 
+    $(".navigation__link").click(function(e) {
+        e.preventDefault();
+        $("#navi-toggle").prop('checked', false);;
+    });
     $(".popup__open").click(function(e) {
         e.preventDefault();
         $("#popup").addClass("active");

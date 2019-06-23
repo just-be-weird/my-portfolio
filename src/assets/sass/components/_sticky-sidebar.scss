@@ -17,6 +17,9 @@
     bottom: 10rem;
     left: 4rem;
     z-index: 10;
+    @include respond(tab-port) {
+        left: 2rem;
+    }
     &__container {
     }
     &__item {
