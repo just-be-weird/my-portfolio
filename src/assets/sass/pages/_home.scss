@@ -6,17 +6,26 @@
     text-align: justify;
     margin-top: 10rem; // header height is 95vh, green section height 75vh so 95-75 = 25
     // padding: 25rem 0;
-    // @include respond(tab-port) {
-    //     padding: 35rem 0 25rem;
-    // }
+    @include respond(tab-port) {
+        padding: 0 0 10rem;
+        height: auto;
+    }
     .long-copy {
         margin-bottom: 14rem;
+        @include respond(tab-port) {
+            margin: 0 auto 8rem;
+        }
     }
 }
 
 .section-experience {
     height: 100vh;
     margin: 10rem 20rem 0;
+    @include respond(tab-port) {
+        margin: 0;
+        padding: 8rem 0 20rem;
+        height: auto;
+    }
     // margin-top: 10rem;
     &-selector {
         display: flex;
@@ -28,6 +37,9 @@
                 border-left: 2px solid $color-grey-light-2;
                 list-style: none;
                 margin: 0 4rem 0 0;
+                @include respond(tab-port) {
+                    margin: 0;
+                }
                 button {
                     outline: none;
                     text-decoration-skip-ink: auto;
@@ -107,10 +119,16 @@
         display: flex;
         justify-content: space-evenly;
     }
+    @include respond(tab-port) {
+        height: auto;
+    }
 }
 .section-projects {
     margin-top: 20rem;
     height: 100vh;
+    @include respond(tab-port) {
+        height: auto;
+    }
 }
 .section-contact {
     -webkit-transform: skewY(-7deg);

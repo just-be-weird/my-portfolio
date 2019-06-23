@@ -24,6 +24,9 @@ button {
     }
     &-resume {
         margin: 6rem 0 0 10rem;
+        @include respond(tab-port) {
+            margin: 6rem 0 0 0rem;
+        }
     }
     
     &,
