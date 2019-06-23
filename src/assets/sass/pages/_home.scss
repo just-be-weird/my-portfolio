@@ -159,7 +159,7 @@
             rgba($color-white, 0.7) 50%,
             transparent 50%
         ),
-        url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png);
+        url(public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png);
 
     /*
                                         angle,
@@ -178,7 +178,7 @@
                 rgba($color-white, 0.7) 65%,
                 transparent 65%
             ),
-            url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png);
+            url(public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png);
         background-size: cover;
     }
     @include respond(tab-port) {
@@ -186,7 +186,7 @@
             to right,
             rgba($color-white, 0.9) 0%,
             rgba($color-white, 0.9) 100%,
-            url(/public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png)
+            url(public/assets/img/IDR_THEME_NTP_BACKGROUND@1x.png)
         );
         background-size: cover;
     }
