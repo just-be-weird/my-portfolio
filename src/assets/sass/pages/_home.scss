@@ -20,7 +20,7 @@
 
 .section-experience {
     height: 100vh;
-    margin: 10rem 20rem 0;
+    margin: 10rem 20rem 15rem;
     @include respond(tab-port) {
         margin: 0;
         padding: 8rem 0 20rem;
