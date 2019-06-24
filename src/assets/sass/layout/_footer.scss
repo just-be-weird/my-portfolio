@@ -84,8 +84,10 @@
         width: 80%;
 
         @include respond(tab-port) {
+            font-size: 1.8rem;
             width: 100%;
             float: none;
+            text-align: center;
         }
     }
 }

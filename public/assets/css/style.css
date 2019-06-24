@@ -237,6 +237,9 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 2rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -487,6 +490,9 @@ button {
         font-size: 1.5rem;
         padding: 1rem;
         text-align: center; }
+        @media (max-width: 56.25em) {
+          .card__details ul li {
+            font-size: 1.8rem; } }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
   .card__cta {
@@ -603,12 +609,18 @@ button {
   .stones-box__text {
     font-size: 1.6rem;
     padding: 0.5rem 0 1rem; }
+    @media (max-width: 56.25em) {
+      .stones-box__text {
+        font-size: 1.8rem; } }
   .stones-box__list li {
     text-align: initial;
     padding: 0 0 0 1.5rem;
     color: #002300; }
     .stones-box__list li::before {
       color: black !important; }
+    @media (max-width: 56.25em) {
+      .stones-box__list li {
+        font-size: 1.8rem; } }
   .stones-box--soul:hover {
     background: linear-gradient(to right, #FF5722, #FF9800); }
   .stones-box--time:hover {
@@ -1147,8 +1159,10 @@ button {
     width: 80%; }
     @media (max-width: 56.25em) {
       .footer__copyright {
+        font-size: 1.8rem;
         width: 100%;
-        float: none; } }
+        float: none;
+        text-align: center; } }
 
 .container {
   background-color: #ffffff; }
@@ -1334,7 +1348,7 @@ header {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#ffffff, #beebf1);
+  background-image: radial-gradient(#ffffff, #f1d5b9);
   display: none;
   z-index: 1000;
   transition: transform 0.8s; }
@@ -1551,14 +1565,21 @@ nav {
     display: flex;
     margin-top: 6rem;
     max-width: 120rem;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    flex-direction: row; }
+    @media (max-width: 56.25em) {
+      .section-experience-selector {
+        flex-direction: column; } }
+    @media (max-width: 56.25em) {
+      .section-experience-selector-tab {
+        margin: 0 auto; } }
     .section-experience-selector-tab li {
       border-left: 2px solid #eee;
       list-style: none;
       margin: 0 4rem 0 0; }
       @media (max-width: 56.25em) {
         .section-experience-selector-tab li {
-          margin: 0; } }
+          margin: 0 auto; } }
       .section-experience-selector-tab li button {
         outline: none;
         text-decoration-skip-ink: auto;
@@ -1581,17 +1602,37 @@ nav {
     .section-experience-selector-job-desc div[id^="job"] {
       display: none;
       outline: none; }
+      @media (max-width: 56.25em) {
+        .section-experience-selector-job-desc div[id^="job"] .job__title {
+          text-align: center; } }
       .section-experience-selector-job-desc div[id^="job"] .job__title span {
         font-size: 1.6rem; }
+        @media (max-width: 56.25em) {
+          .section-experience-selector-job-desc div[id^="job"] .job__title span {
+            font-size: 2.6rem; } }
       .section-experience-selector-job-desc div[id^="job"] .job__span {
         font-size: 1.2rem;
         color: #777777; }
+        @media (max-width: 56.25em) {
+          .section-experience-selector-job-desc div[id^="job"] .job__span {
+            text-align: center;
+            font-size: 1.6rem; } }
       .section-experience-selector-job-desc div[id^="job"] .ul-selector li {
         padding: 2rem 3rem;
         font-size: 1.6rem;
-        position: relative; }
+        position: relative;
+        padding: 2.5rem 10rem; }
+        @media (max-width: 56.25em) {
+          .section-experience-selector-job-desc div[id^="job"] .ul-selector li svg {
+            top: 3rem;
+            left: 3rem; }
+          .section-experience-selector-job-desc div[id^="job"] .ul-selector li p {
+            font-size: 2rem; } }
       .section-experience-selector-job-desc div[id^="job"] .job__company a {
         font-size: 2.6rem; }
+        @media (max-width: 56.25em) {
+          .section-experience-selector-job-desc div[id^="job"] .job__company a {
+            font-size: 3.6rem; } }
       .section-experience-selector-job-desc div[id^="job"].active {
         display: block; }
   .section-experience .cta-container {

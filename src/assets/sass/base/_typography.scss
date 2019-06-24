@@ -89,7 +89,10 @@ body {
     color: $color-black;;
     font-size: $default-font-size+0.1rem;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 }
 
 .paragraph {
